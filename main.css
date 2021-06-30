@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow: hidden;
+    background-color: black;
+}
+
+section{
+    position: relative;
+}
+
+.image{
+    position: absolute;
+    display: block;
+    background-color: white;
+    animation-duration: 4s;
+    animation-name: dvdanim;
+    animation-timing-function: linear;
+}
+
+.image{
+    position: absolute;
+    display: block;
+    background-color: white;
+    animation-duration: 4s;
+    animation-name: dvdanimA;
+    animation-timing-function: linear;
+}
+
+@keyframes dvdanim {
+    0%{background-color:red; left: 0px; top: 0px;}
+    15% {background-color: red; left: 1000px; top:0 ;}    
+    25%{background-color: orange; left: 1000px; top: 2000px;}
+    50%{background-color: yellow; left: 2000px; top: 0;}
+    75%{background-color:rgb(1, 155, 1); left: 1000px; top: 1000px;}
+    100%{background-color:blue; left: 0px; top: 0;}
+}
+@keyframes dvdanimA {
+    0%{background-color:blue; left: 0px; top: 0px;}
+    15% {background-color: purple; left: 2000px; top:0 ;}    
+    25%{background-color: red; left: 200px; top: 2000px;}
+    50%{background-color: orange; left: 2000px; top: 0;}
+    75%{background-color:yellow; left: 2000px; top: 2000px;}
+    100%{background-color:rgb(1, 155, 1); left: 0px; top: 0;}
+}
